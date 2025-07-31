@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  .snowflake {
+    position: fixed;
+    top: -10px;
+    color: #fff;
+    font-size: 1em;
+    animation: fall linear infinite;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Darryl & Jessie - Our Love Timeline 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <script>
+  const snowContainer = document.createDocumentFragment();
+  const snowflake = "❤️";
+
+  for (let i = 0; i < 50; i++) {
+    const snow = document.createElement("div");
+    snow.className = "snowflake";
+    snow.innerText = snowflake;
+    snow.style.left = Math.random() * 100 + "vw";
+    snow.style.animationDuration = 5 + Math.random() * 5 + "s";
+    snow.style.fontSize = Math.random() * 10 + 10 + "px";
+    snow.style.opacity = Math.random();
+    snow.style.animationDelay = Math.random() * 5 + "s";
+    snowContainer.appendChild(snow);
+  }
+
+  document.body.appendChild(snowContainer);
+</script>
+  <audio id="bgMusic" autoplay loop>
+  <source src="assets/iwannabeurs.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  window.addEventListener('click', () => {
+    const music = document.getElementById('bgMusic');
+    music.play();
+  });
+</script>
+
+
+  <h1>💖 Darryl & Jessie 💖<br>Our Love Timeline</h1>
+  <div class="timeline">
+
+    <div class="timeline-item" data-aos="fade-left">
+      <div class="timeline-date">17 June 2025</div>
+      <div class="timeline-content">
+        <img src="assets/firstchat.jpg" alt="My first move">
+        <h3>My first move</h3>
+        <p>I made the first move by DM-ing Jessie first. At that time, I was so confused about how to start the conversation because Jessie rarely posted any stories—so I had no clue what topic to begin with! But instead of overthinking, I figured I might as well just go for it. AHAHAHAHAHAHAHAHA!</p>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-date">1 July 2025</div>
+      <div class="timeline-content">
+        <img src="assets/wjfirst.jpg" alt="First meet">
+        <h3>First meet</h3>
+        <p>Meeting Jessie for the first time was the most exciting and nerve-wracking moment of the day. We went on a movie date and watched an F1 film. After the movie, we chatted and yapped away, getting to know each other better. The photobox session was still pretty awkward at that point—HAHAHAHAHAHA!. 💌</p>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-left">
+      <div class="timeline-date">2 July 2025</div>
+      <div class="timeline-content">
+        <img src="assets/wj8.jpg" alt="Our second photobox">
+        <h3>Our second photobox</h3>
+        <p>Our second photobox session at Walking Drums café in Margonda helped me and Jessie get to know each other even better. We had a full conversation from late afternoon all the way into the night. It made me really happy to feel even closer to her. ☕🍰</p>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-date">22 July 2025</div>
+      <div class="timeline-content">
+        <img src="assets/j.jpg" alt="The day we officially became a couple">
+        <h3>The day we officially became a couple</h3>
+        <p>The day Jessie celebrated her birthday—and Darryl wanted to make it double special! That’s when Darryl decided to ask Jessie to be his girlfriend, turning it into an extra, extra special day! AHAHAHAHAHAHAHAHA!. ❤️🎁</p>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-date">25 July 2025</div>
+      <div class="timeline-content">
+        <img src="assets/wj 3.jpg" alt="Blok m date,Our first date as a couple">
+        <h3>Blok m date,Our first date as a couple</h3>
+        <p>The day Jessie celebrated her birthday—and Darryl wanted to make it double special! That’s when Darryl decided to ask Jessie to be his girlfriend, turning it into an extra, extra special day! AHAHAHAHAHAHAHAHA!. ❤️🎁</p>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-left">
+  <div class="timeline-date">29 July 2025</div>
+  <div class="timeline-content">
+    <video src="assets/wjtimelapse.mp4" controls autoplay muted loop style="width: 100%; border-radius: 10px;"></video>
+    <h3>Happy national GirlfriendDay My loveeee</h3>
+    <p>Happy National Girlfriend Day, my loveee! 💖
+I truly hope that we’ll always care for, love, and complete each other. I wish for us to keep growing together—until all the things we’ve been manifesting finally come true.
+<br>
+I loveee you sooo much, Jessieee! 🥹💕
+<br>from Darryl</p>
+  </div>
+</div>
+
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
